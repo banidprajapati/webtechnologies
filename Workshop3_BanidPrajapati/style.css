@@ -1,0 +1,23 @@
+*{
+    background-color: #121212;
+    color: aliceblue;
+    font-size: 16;
+}
+ul{
+    border: 1px solid #fff;
+    font-size: 18px;
+}
+#header{
+    border: 1px solid #ccc;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+Input[type=“text”] {
+
+    font-size: 16px;
+    
+    line-height: 1.2;
+    
+    }
