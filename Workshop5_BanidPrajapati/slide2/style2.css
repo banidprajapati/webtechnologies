@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    background-color: #0c3b2e;
+    height: 900px;
+}
+
+.Container{
+    flex: 2;
+    display: inline-block;
+    width: 1000px;
+    font-size: 80px;
+    padding: 80px;
+}
+
+.text{
+    flex: 1;
+    display: inline-block;
+    font-size: 60px;
+    max-height: 80px;
+}
+.photo{
+    text-align: center;
+}
+img{
+    margin-top: 500px;
+    height: 800px;
+}
