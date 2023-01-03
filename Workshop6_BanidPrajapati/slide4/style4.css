@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.home1{
+    display: flex;
+    background-color: #0c3b2e;
+    height: 900px;
+}
+.container{
+    flex: 3;
+}
+.image{
+    text-align: left;
+    flex: 5; 
+}
+img{
+    width: 600px;
+}
+h1{
+    color: aliceblue;
+    padding-right: 500px;
+    padding-top: 80px;
+    max-width: 1000px;
+    font-size: 90px;
+    
+}
+
+p{
+    color: aliceblue;
+    padding-right: 500px;
+    padding-top: 300px;
+    font-size: 40px;
+    
+}
