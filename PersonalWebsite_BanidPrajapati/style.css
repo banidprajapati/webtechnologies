@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+#baDesignsLogo{
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: -2%;
+}
+.navigationBar{
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+}
+a{
+    padding: 80px;
+    color: aliceblue;
+    font-size: 24px;
+
+}
+P{
+    color: aliceblue;
+}
