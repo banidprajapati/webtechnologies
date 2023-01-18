@@ -1,26 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
 }
 
-#baDesignsLogo{
-    display: block;
-    margin: auto;
-    width: 50%;
-    margin-top: -2%;
+#baDesignsLogo {
+  display: block;
+  margin: 100px auto;
+  width: 45%;
 }
-.navigationBar{
-    margin: auto;
-    padding-top: 15px;
-    text-align: center;
+.navigationBar {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
 }
-a{
-    padding: 80px;
-    color: aliceblue;
-    font-size: 24px;
+a {
+  padding: 60px;
+  color: aliceblue;
+  font-size: 24px;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+}
 
+#aboutme {
+  color: aliceblue;
+  margin: 100px 110px 0 200px;
 }
-P{
-    color: aliceblue;
+.aboutme {
+  display: flex;
+  color: aliceblue;
+}
+.introduction {
+  color: aliceblue;
+  flex: 6;
+  margin: 40px 55px 0 200px;
+  text-align: justify;
+}
+h3 {
+  font-size: 80px;
+}
+p {
+  font-size: 24px;
+}
+
+.portrait {
+  flex: 3;
+  margin: 0 250px 0 55px;
+  text-align: right;
+}
+#portrait {
+  width: 120%;
 }
