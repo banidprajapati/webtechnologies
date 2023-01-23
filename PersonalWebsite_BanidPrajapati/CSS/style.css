@@ -73,3 +73,17 @@ a:hover {
   text-decoration: none;
   font-weight: 900;
 }
+.outerillustrations {
+  max-height: 1400px;
+  overflow: hidden;
+}
+.illustrations {
+  margin: 80px 800px 0 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+.illustrations img {
+  width: 490px;
+}
