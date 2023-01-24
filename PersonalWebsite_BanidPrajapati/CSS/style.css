@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+}
+body {
   background-color: #121212;
   color: aliceblue;
 }
@@ -11,7 +13,8 @@
   width: 45%;
 }
 .navigationBar {
-  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   padding-top: 20px;
   text-align: center;
 }
@@ -24,8 +27,11 @@
 a:hover {
   color: gray;
 }
-
+#aboutme {
+  padding-top: 5px;
+}
 #navBarinfo {
+  font-family: "Karla", sans-serif;
   color: aliceblue;
   margin: 100px 110px 0 200px;
 }
@@ -36,18 +42,21 @@ a:hover {
 .introduction {
   color: aliceblue;
   flex: 6;
-  margin: 90px 55px 0 200px;
+  margin: 60px 55px 0 200px;
   text-align: justify;
 }
 .introduction h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 80px;
   padding-bottom: 20px;
 }
 .introduction p {
+  font-family: "Karla", sans-serif;
   font-size: 28px;
   padding-bottom: 20px;
 }
 .introduction button {
+  font-family: "Karla", sans-serif;
   background-color: #e94c3d;
   font-size: 30px;
   border-radius: 40px;
@@ -61,18 +70,49 @@ a:hover {
   margin: 0 250px 0 55px;
   text-align: right;
 }
+
 #portraitPhoto {
   width: 120%;
 }
 
+.footer {
+  background-color: #eeeeee;
+  color: #121212;
+  height: 300px;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+}
+.footer img {
+  margin: 60px 55px 0 200px;
+  height: 100px;
+}
+.centre {
+  flex: 1;
+}
+.right {
+  flex: 1;
+}
+
+/* Start of Projects sections */
+
 .projects {
-  font-size: 120px;
-  margin: 80px 55px 0 200px;
+  max-height: 100vh;
+  font-size: 100px;
+  margin: 70px 55px 0 200px;
 }
 .projects a {
+  font-family: "Karla", sans-serif;
   text-decoration: none;
+  color: aliceblue;
   font-weight: 900;
 }
+.projects a:hover {
+  color: gray;
+}
+
 .outerillustrations {
   max-height: 1400px;
   overflow: hidden;
