@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #121212;
   color: aliceblue;
@@ -61,11 +62,15 @@ a:hover {
 .introduction button {
   font-family: "Montserrat", sans-serif;
   background-color: #e94c3d;
-  font-size: 30px;
+  font-size: 28px;
   border-radius: 40px;
-  width: 50%;
+  width: 45%;
   height: 50px;
   text-align: center;
+  margin-right: 35px;
+}
+.introduction a {
+  text-decoration: none;
 }
 .introduction button:hover {
   background-color: #e73323;
@@ -139,10 +144,10 @@ a:hover {
   margin: 70px 55px 0 200px;
 }
 .projects a {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: aliceblue;
-  font-weight: 900;
+  font-weight: 700;
 }
 .projects a:hover {
   color: gray;
