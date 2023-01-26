@@ -37,6 +37,10 @@ a:hover {
   color: aliceblue;
   margin: 100px 110px 0 200px;
 }
+i {
+  margin: 200px 0 110px 100px;
+  color: aliceblue;
+}
 
 .aboutme {
   display: flex;
@@ -166,4 +170,20 @@ a:hover {
 }
 .illustrations img {
   width: 490px;
+}
+
+/* Start of the Contatct section */
+.containerContact {
+  max-height: 100vh;
+}
+.contactInfo {
+  font-size: 50px;
+  margin: 70px 55px 0 200px;
+  font-family: "Montserrat", sans-serif;
+}
+.contactInfo h1 {
+  margin: 0 0 70px 0;
+}
+.contactInfo h3 {
+  margin: 45px 0;
 }
