@@ -18,14 +18,19 @@ body {
 .cross {
   text-align: right;
   margin: -55px 200px 0 100px;
-  font-size: 50px;
+  font-size: 40px;
+  color: aliceblue;
+}
+.cross a {
+  margin-left: 50px;
+  text-decoration: none;
   color: aliceblue;
 }
 
 /* Start of Footer section */
 .bodyfooter {
-  background-color: aliceblue;
-  color: #121212;
+  background-color: #1f1f1f;
+  color: aliceblue;
   height: 275px;
 }
 
@@ -54,7 +59,7 @@ body {
 }
 .centre a {
   text-decoration: none;
-  color: #121212;
+  color: aliceblue;
   font-size: 18px;
 }
 .right {
@@ -65,7 +70,7 @@ body {
 
 .right a {
   text-decoration: none;
-  color: #121212;
+  color: aliceblue;
   font-size: 18px;
 }
 
@@ -80,6 +85,7 @@ body {
   margin: 80px auto;
   width: 45%;
 }
+
 .navigationBar {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -96,32 +102,81 @@ body {
 a:hover {
   color: gray;
 }
+
+/* Start of About me Section */
 #aboutme {
   padding-top: 5px;
 }
 
-.aboutme {
+.aboutMe1 {
   display: flex;
   color: aliceblue;
 }
-.introduction {
+
+.introduction1 {
   color: aliceblue;
   flex: 6;
   margin: 40px 55px 0 200px;
   text-align: justify;
 }
-.introduction h3 {
+.introduction1 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
+  font-size: 100px;
   padding-bottom: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
-.introduction p {
+.introduction1 p {
   font-family: "Lora", serif;
   font-size: 28px;
   padding-bottom: 20px;
+  margin-left: 10px;
 }
-.introduction button {
+
+.portraitPhoto {
+  flex: 3;
+  margin: -15px 250px 0 55px;
+  text-align: right;
+}
+
+#portraitPhoto {
+  width: 100%;
+}
+
+.aboutMe2 {
+  display: flex;
+  margin-top: 120px;
+}
+.illustrationPhoto {
+  flex: 3;
+  margin: 0px 55px 0 200px;
+  text-align: left;
+}
+#illustrationPhoto {
+  width: 90%;
+}
+.introduction2 {
+  margin: -10px 55px 0 200px;
+  flex: 6;
+}
+.introduction2 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.introduction2 p {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  padding: 0 0px 4px 0px;
+  padding-left: 10px;
+}
+
+.introduction2 a {
+  text-decoration: none;
+}
+
+.introduction2 button {
   font-family: "Montserrat", sans-serif;
   background-color: #e94c3d;
   font-size: 28px;
@@ -131,20 +186,56 @@ a:hover {
   text-align: center;
   margin-right: 35px;
 }
-.introduction a {
-  text-decoration: none;
-}
-.introduction button:hover {
+
+.introduction2 button:hover {
   background-color: #e73323;
 }
-.portraitPhoto {
-  flex: 3;
-  margin: -15px 250px 0 55px;
-  text-align: right;
+
+.aboutMe3 {
+  display: flex;
+  margin-top: 120px;
 }
 
-#portraitPhoto {
-  width: 120%;
+.interestTitle {
+  margin: -60px 55px 20px 200px;
+  flex: 6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.interest {
+  margin: 130px 300px 0 55px;
+}
+.interest p {
+  flex: 3;
+  text-align: end;
+  font-family: "Lora", serif;
+  font-size: 36px;
+  padding-bottom: 25px;
+}
+
+.introduction3 a {
+  text-decoration: none;
+}
+
+.aboutMe4 {
+  margin: 40px;
+  text-align: center;
+}
+.clients {
+  text-align: center;
+  font-size: 80px;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 200px;
+  margin: 100px;
+}
+.logo1 .logo2 .logo3 {
+  flex: 1;
 }
 
 /* Start of Projects sections */
