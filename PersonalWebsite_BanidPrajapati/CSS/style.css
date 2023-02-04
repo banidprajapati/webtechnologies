@@ -5,6 +5,7 @@
 /* Universal CSS codes */
 
 body {
+  overflow-x: hidden;
   background-color: #121212;
   color: aliceblue;
 }
@@ -13,18 +14,29 @@ body {
   font-family: "Lora", serif;
   font-size: 32px;
   color: aliceblue;
-  margin: 100px 110px 0 200px;
+  margin: 70px 110px 0 200px;
 }
-.cross {
-  text-align: right;
-  margin: -55px 200px 0 100px;
-  font-size: 40px;
+.navigationBar {
+  position: initial;
+  width: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-top: 30px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.navigationBar a {
+  width: 100vh;
+  margin: 80px 60px;
   color: aliceblue;
-}
-.cross a {
-  margin-left: 50px;
+  font-size: 24px;
   text-decoration: none;
-  color: aliceblue;
+}
+.navigationBar a:hover {
+  width: 100vh;
+  color: #e94c3d;
 }
 
 /* Start of Footer section */
@@ -86,28 +98,7 @@ body {
   width: 45%;
 }
 
-.navigationBar {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.navigationBar a {
-  margin: 80px 60px;
-  color: aliceblue;
-  font-size: 24px;
-  text-decoration: none;
-}
-a:hover {
-  color: gray;
-}
-
 /* Start of About me Section */
-#aboutme {
-  padding-top: 5px;
-}
-
 .aboutMe1 {
   display: flex;
   color: aliceblue;
@@ -190,6 +181,46 @@ a:hover {
 .introduction2 button:hover {
   background-color: #e73323;
 }
+.skillSection {
+  margin: 120px 250px 0 250px;
+}
+.skillSection h3 {
+  text-align: center;
+  font-size: 80px;
+}
+.bxs-checkbox {
+  border: 1px solid aliceblue;
+}
+.tick {
+  /* border: 1px solid white; */
+  color: aliceblue;
+  border-radius: 8px;
+}
+.untick {
+  color: #121212;
+  border-radius: 8px;
+}
+
+.skills {
+  display: flex;
+  text-align: center;
+}
+.skills {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  padding-bottom: 25px;
+}
+.graphicDesign {
+  flex: 1;
+  padding: 40px 0;
+}
+#skillSelection {
+  padding: 20px;
+}
+.programmingLanguages {
+  flex: 1;
+  padding: 40px 0;
+}
 
 .aboutMe3 {
   display: flex;
@@ -197,7 +228,7 @@ a:hover {
 }
 
 .interestTitle {
-  margin: -60px 55px 20px 200px;
+  margin: -200px 55px 20px 200px;
   flex: 6;
   font-family: "Montserrat", sans-serif;
   font-size: 100px;
@@ -205,7 +236,7 @@ a:hover {
 }
 
 .interest {
-  margin: 130px 300px 0 55px;
+  margin: -20px 300px 0 55px;
 }
 .interest p {
   flex: 3;
@@ -228,7 +259,10 @@ a:hover {
   font-size: 80px;
 }
 .logo {
+  /* align-items: center; */
+  justify-content: center;
   display: flex;
+  gap: 25px;
 }
 .logo img {
   height: 200px;
