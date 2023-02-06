@@ -18,6 +18,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="/JS/script.js" defer></script>
     <title>Banid Prajapati - Portfolio</title>
   </head>
   <body>
@@ -51,9 +52,27 @@
     </section>
 
     <section class="aboutMe2">
-      <div class="illustrationPhoto">
-        <img id="illustrationPhoto" src="/Assets/portrait.jpg" />
-      </div>
+      <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8656;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8658;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="/Assets/curtis-jones.jpg" alt="Nature Image #1" />
+            </li>
+            <li class="slide">
+              <img src="/Assets/salah (2).jpg" alt="Nature Image #2" />
+            </li>
+            <li class="slide">
+              <img src="/Assets/toney.jpg" alt="Nature Image #3" />
+            </li>
+          </ul>
+        </div>
+      </section>
       <div class="introduction2">
         <h3>
           I Convert<br />Photos into<br />
@@ -69,7 +88,7 @@
     </section>
 
     <section class="skillSection">
-      <h3>Tools I use</h3>
+      <h3>My Skills on the Tools I use</h3>
       <div class="skills">
         <div class="graphicDesign">
           <div id="skillSelection">Adobe Photoshop</div>
@@ -160,18 +179,9 @@
         <h3>Clients I have worked with</h3>
       </div>
       <div class="logo">
-        <img
-          class="logo1"
-          src="/HTML/Projects/Assets/Illustrations/coutinho.jpg"
-        />
-        <img
-          class="logo2"
-          src="/HTML/Projects/Assets/Illustrations/coutinho.jpg"
-        />
-        <img
-          class="logo2"
-          src="/HTML/Projects/Assets/Illustrations/coutinho.jpg"
-        />
+        <img class="logo1" src="/Assets/NorlingLOGO.png" />
+        <img class="logo2" src="/Assets/lokopakar logo.jpg" />
+        <img class="logo2" src="/Assets/NRT LOGO.png" />
       </div>
     </div>
 

@@ -1,4 +1,7 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -8,42 +11,45 @@ body {
   overflow-x: hidden;
   background-color: #121212;
   color: aliceblue;
+  /* height: 92px; */
 }
 
 #navBarinfo {
   font-family: "Lora", serif;
   font-size: 32px;
   color: aliceblue;
-  margin: 70px 110px 0 200px;
+  margin: 55px 110px 0 200px;
 }
 .navigationBar {
-  position: initial;
-  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 160px; */
+  margin: 30px 200px 0 200px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  padding-top: 30px;
-  text-align: center;
-  margin: auto;
-  padding: auto;
 }
 
 .navigationBar a {
-  width: 100vh;
-  margin: 80px 60px;
+  margin: 0 120px;
+  width: 2vh;
   color: aliceblue;
   font-size: 24px;
   text-decoration: none;
 }
 .navigationBar a:hover {
-  width: 100vh;
   color: #e94c3d;
+}
+.navFix {
+  margin-right: 18px;
 }
 
 /* Start of Footer section */
 .bodyfooter {
   background-color: #1f1f1f;
   color: aliceblue;
-  height: 275px;
+  height: 400px;
+  /* background-color: #e73323; */
 }
 
 .footer {
@@ -52,12 +58,12 @@ body {
 
 .left {
   font-family: "Montserrat", sans-serif;
-  flex: 1;
+  flex: 2;
   margin: 40px 55px 0 200px;
 }
 .left img {
   /* margin: 40px 55px 0 200px; */
-  height: 100px;
+  height: 180px;
 }
 
 .left p {
@@ -87,6 +93,9 @@ body {
 }
 
 #footerSign {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -119,8 +128,7 @@ body {
 .introduction1 p {
   font-family: "Lora", serif;
   font-size: 28px;
-  padding-bottom: 20px;
-  margin-left: 10px;
+  margin: 0 0 20px 10px;
 }
 
 .portraitPhoto {
@@ -135,18 +143,79 @@ body {
 
 .aboutMe2 {
   display: flex;
+  gap: -180px;
   margin-top: 120px;
 }
-.illustrationPhoto {
-  flex: 3;
-  margin: 0px 55px 0 200px;
-  text-align: left;
+
+.carousel {
+  flex: 1;
+  margin: 0 0px 0 200px;
+  width: 100vh;
+  height: 100vh;
+  position: relative;
 }
-#illustrationPhoto {
-  width: 90%;
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 220px;
 }
 .introduction2 {
-  margin: -10px 55px 0 200px;
+  margin: 10% 200px 0 0px;
   flex: 6;
 }
 .introduction2 h3 {
@@ -172,7 +241,7 @@ body {
   background-color: #e94c3d;
   font-size: 28px;
   border-radius: 40px;
-  width: 45%;
+  width: 80%;
   height: 50px;
   text-align: center;
   margin-right: 35px;
@@ -182,9 +251,11 @@ body {
   background-color: #e73323;
 }
 .skillSection {
+  font-family: "Montserrat", sans-serif;
   margin: 120px 250px 0 250px;
 }
 .skillSection h3 {
+  font-family: "Lora", serif;
   text-align: center;
   font-size: 80px;
 }
@@ -255,21 +326,22 @@ body {
   text-align: center;
 }
 .clients {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 80px;
 }
 .logo {
-  /* align-items: center; */
-  justify-content: center;
   display: flex;
-  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-height: 300px;
 }
 .logo img {
-  height: 200px;
-  margin: 100px;
-}
-.logo1 .logo2 .logo3 {
-  flex: 1;
+  width: 10%;
+  aspect-ratio: 3/20;
+  object-fit: contain;
+  /* mix-blend-mode: difference; */
 }
 
 /* Start of Projects sections */
@@ -301,7 +373,14 @@ body {
   gap: 0px;
 }
 .illustrations img {
-  width: 490px;
+  width: 520px;
+}
+
+.currentProject {
+  font-family: "Montserrat", sans-serif;
+  max-height: 100vh;
+  font-size: 80px;
+  margin: 70px 55px 0 200px;
 }
 
 /* Start of the Contatct section */
